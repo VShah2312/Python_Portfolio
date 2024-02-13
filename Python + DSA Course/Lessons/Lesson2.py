@@ -20,7 +20,7 @@ print(x_converted, type(x_converted), y , type(y_converted))
 # input for length and width.
 x= input("Enter length of the rectangle: ")
 y= input("Enter width of the rectangle: ")
-area= int(x)* int(y)
+area= float(x)* float(y)
 print("Area of rectangle is ", int(x)* int(y) )
 
 # Q7. Write a Python program to calculate the average of three numbers
@@ -30,12 +30,13 @@ avgerage= (int(x)+int(y)+int(z))/ 3
 print(f"Average of the numbers is {avgerage}")
 
 # Q8. Convert a float to an integer and vice versa.
-x= 6
-y= 2.3
+x= int(input("Enter an integer:"))
+y= float(input("Enter an float:"))
 print(x, type(x), y, type(y))
 x_converted= float(x)
 y_converted = int(y)
-print(x_converted, type(x_converted), y , type(y_converted))
+print(x_converted, type(x_converted), y_converted , type(y_converted))
+
 
 # Q9. Write a program that converts a temperature in Fahrenheit to Celsius.
 # The formula is: Celsius = (Fahrenheit - 32) * 5/9.
