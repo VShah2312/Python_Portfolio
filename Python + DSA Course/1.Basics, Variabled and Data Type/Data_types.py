@@ -28,5 +28,5 @@ print(x+y)
 # Returns: 65
 
 a= "100.5"
-# print(int(a)) throws an error
+print(int(a)) #throws an error
 print(float(a)) # this works. 

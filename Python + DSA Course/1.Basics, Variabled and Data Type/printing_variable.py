@@ -7,3 +7,8 @@ print("My name is ", name, "My age is ", age, "and my gender is ", gender)
 
 # Method 2 (F-string)
 print(f"My name is {name}. My age is {age}. My gender is {gender}.")
+
+# Way to debug
+print(f"{name= }")
+print(f"age= {age}")
+print(f"{name =},{age = }")
