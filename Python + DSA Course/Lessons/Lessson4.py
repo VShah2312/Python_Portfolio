@@ -22,7 +22,7 @@ print(num1==num2 or num1>num2) # Answer:True (false or true)
 #Q:20
 m=8
 n=6
-print(m>=n and n!=m) # Answer:False (true and false)
+print(m>=n and n!=m) # Answer:True (true and true)
 
 #Q:21
 a=5

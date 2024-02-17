@@ -37,6 +37,6 @@ phys= float(input("Enter your Physics grade: "))
 chem= float(input("Enter your Chemistry grade: "))
 
 if phys>=70 and chem>=70:
-    print("Student has PASSED")
+    print("PASS")
 else: 
-    print("Student has FAILED")
+    print("FAIL")

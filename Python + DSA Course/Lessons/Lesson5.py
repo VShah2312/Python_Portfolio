@@ -36,9 +36,9 @@ else:
 classes_held= int(input("Enter number of classes held: "))
 classes_attended = int(input("Enter number of classes attended: "))
 
-attendance_percent= ceil(classes_attended/classes_held * 100)
+attendance_percent= classes_attended/classes_held * 100
 print(f"Your attendance percentage is {attendance_percent}%")
-if attendance_percent<75: 
+if attendance_percent>=75: 
     print("You are allowed to sit in exam")
 else: 
     print("You are not allowed to sit in the exam")
