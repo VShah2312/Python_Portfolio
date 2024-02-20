@@ -19,3 +19,5 @@ else:
         print("Equal to zero")
     else:
         print("Negative")
+
+# Gives same output. 

@@ -1,3 +1,4 @@
+# How to check a data type of a variable and how to convert them. 
 x= 55 
 print(x)
 print(x, type(x))
