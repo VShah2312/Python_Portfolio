@@ -120,7 +120,7 @@ num: int = int(input("Enter a number: "))
 i: int = num * -1
 j: int = num
 
-if i < 0:
+if num < 0:
     while i <= j:
         print(i, end=" ")
         i += 1

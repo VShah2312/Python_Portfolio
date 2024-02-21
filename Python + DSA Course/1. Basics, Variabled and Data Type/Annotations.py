@@ -13,6 +13,7 @@ print(a)
 
 # So is better to restrict data type of a variable? Answer is yes. Solution to this is Annotations.
 # Keep in mind it is still dynamically typed. Annotations is just for users clarity/ for developers understanding.
+# We are mimigring the statistically type language.
 a: int = 5
 print(a)
 
