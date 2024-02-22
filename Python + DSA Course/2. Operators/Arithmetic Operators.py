@@ -5,6 +5,7 @@ print(20 % 3)  # Answer= 2
 print(5 % 10)  # Answer= 5 python returns small value when modulo is not possible
 print(9 % 10)  # Answer= 9
 print(-16 % 5)  # Answer= 4
+# basically it looks at lowest integer in table of 5 which would be -20 then we would be adding 4 to get to -16. Thus 4.
 
 print(5**0)
 print(5**-1)  # Answer= 0.2
