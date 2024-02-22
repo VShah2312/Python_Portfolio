@@ -17,9 +17,11 @@ def greet():
 
 greet()
 
+
 # if you want to use two word for name of a function loginUser. Use uppercase for Secondword first letter.
 # registerUserandLogin
 # Same naming restriction as variables.
+# also keep in mind call functions after function is define else it will throw error.
 
 # Scoping: Mean till where variable is valid.
 # Local Variables means valid in those functions only.
@@ -39,35 +41,46 @@ def add():
 num1 = 100
 num2 = 200
 add()  # Uses local variables (values entered.)
-print(
-    num1
-)  # This will throw error as num1 is local variable. But will use global variables.
+print(num1)
+# This will throw error as num1 is local variable. But will use global variables.
 
 
 # Make 4 functions add, subtract, multiplication and divide.
 def add():
     # Local Variables.
-    num1: int = int(input("Enter num1: "))
-    num2: int = int(input("Enter num2: "))
+    num1: int = float(input("Enter num1: "))
+    num2: int = float(input("Enter num2: "))
     print(num1 + num2)
 
 
 def subtract():
     # Local Variables.
-    num1: int = int(input("Enter num1: "))
-    num2: int = int(input("Enter num2: "))
+    num1: int = float(input("Enter num1: "))
+    num2: int = float(input("Enter num2: "))
     print(num1 - num2)
 
 
 def product():
     # Local Variables.
-    num1: int = int(input("Enter num1: "))
-    num2: int = int(input("Enter num2: "))
+    num1: int = float(input("Enter num1: "))
+    num2: int = float(input("Enter num2: "))
     print(num1 * num2)
 
 
 def division():
     # Local Variables.
-    num1: int = int(input("Enter num1: "))
-    num2: int = int(input("Enter num2: "))
+    num1: int = float(input("Enter num1: "))
+    num2: int = float(input("Enter num2: "))
     print(num1 / num2)
+
+
+def floorDivision():
+    pass
+
+
+add()
+subtract()
+product()
+division()
+
+# Pass keyword means move on. So for floorDivision function is definied but is pass, as we cant keep it empty.
