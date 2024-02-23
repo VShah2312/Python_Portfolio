@@ -67,3 +67,21 @@ gender = "Female"
 greet_1(name, age, gender)
 print(name, age, gender)
 # No change in result. Same result as example 3.
+
+# Example 5: Make a function checkOddEven which takes a int as an argument.
+# If even print even else odd.
+
+
+def checkOddEven(num: int):
+    if num % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+
+
+checkOddEven(9)
+checkOddEven(10)
+checkOddEven(569)
+
+n = 56
+checkOddEven(n)

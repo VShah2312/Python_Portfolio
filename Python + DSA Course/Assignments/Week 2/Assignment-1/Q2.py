@@ -9,7 +9,7 @@ c. but if the year is evenly divided by 4 and also by 400, then it is a leap yea
 Ask a year input from user. And tell if the year entered by user is leap or not."""
 
 
-def leapYear(year: int):
+def checkLeapYear(year: int):
 
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
         print(f"{year} is a leap year.")
@@ -17,4 +17,4 @@ def leapYear(year: int):
         print(f"{year} is not a leap year.")
 
 
-leapYear(2004)
+checkLeapYear(2004)

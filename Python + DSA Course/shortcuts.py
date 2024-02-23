@@ -38,4 +38,14 @@ shift+ pagedown to select from where cursor is to top (alt+shift +down arrow)
 cmd+L to select current line 
 
 cmd + alt +side to switch between tabs. 
+
+shift +cmd + l to change all the occurence at same time. 
+
+cmd+ n to open new 
+
+cmd+ w to close 
+
+cmd + alt + side to switch between notebooks.
+
+cmd+j hide and unhide the terminal. ctr+ ` does the same 
 """
