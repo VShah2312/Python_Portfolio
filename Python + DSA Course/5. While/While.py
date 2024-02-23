@@ -130,3 +130,47 @@ else:
         print(i, end=" ")
         i -= 1
     print()
+
+# Question 9: Find sum of all the number from 1 to n1 whose i%n2 ==0
+# example: num1=5, num2= 2
+
+
+def func(n1: int = 0, n2: int = 0) -> int:
+    i = 1
+    total = 0
+
+    if n1 <= 0 or n2 <= 0:
+        print("Enter Valid Num1 and Num2")
+    else:
+        while i <= n1:
+            if i % n2 == 0:
+                total += i
+            i += 1
+    return total
+
+
+print(func(10, 2))
+
+
+# Question 10: Factors of a number, count factors and check if it is a prime number or not.
+
+
+def factor(num: int = 0) -> int:
+    i = 1
+    count = 0
+    while i <= num:
+        if num % i == 0:
+            count += 1
+        i += 1
+    return count
+
+
+def checkPrime(n: int) -> bool:
+    if factor(n) != 2:
+        return False
+    return True
+
+
+print(checkPrime(10))
+
+print(123 % 100000)
