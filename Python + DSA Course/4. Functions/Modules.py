@@ -21,6 +21,9 @@ A.rectangle(l=12, b=18)
 from Area import rectangle, cirlce
 from Area import *  # To import all functions
 
-# Using about method we can directly call function.
+# While using this method we can directly call function.
 rectangle(10, 12)
 print(cirlce(5))
+
+# Better way method 1 or method 2
+# Method 1, as we can be using more than one module.

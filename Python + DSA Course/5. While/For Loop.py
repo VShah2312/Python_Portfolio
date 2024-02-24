@@ -48,3 +48,9 @@ for i in range(start, end + 1, 15):
 
 for i in range(10, -11, -1):
     print(i, end=" ")
+
+"""
+Question: We can run while loop infinitely, can we run for loop similarly?
+We can give big number in for, but while is preferable for infinite loop.
+If you know that you want to run loop for finite number of time use for.
+"""
