@@ -1,4 +1,14 @@
-# Example 4: Ask M and N from user.
+# Example 3: Ask M and N from user. Print M to N
+
+m: int = int(input("Enter M: "))
+n: int = int(input("Enter N: "))
+i: int = m
+while i <= n:
+    print(i, end=" ")
+    i += 1
+print()
+
+# Example: Ask M and N from user.
 m: int = int(input("Enter M: "))
 n: int = int(input("Enter N: "))
 
@@ -13,12 +23,3 @@ else:
         print(j, end=" ")
         j += 1
 print()
-
-# Add number 1 to 10
-i: int = 1
-total: int = 0
-while i <= 10:
-    total += i
-    i += 1
-
-print(total)
