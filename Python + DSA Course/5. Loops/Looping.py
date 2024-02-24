@@ -1,6 +1,6 @@
-"""Looping: we keep running loop till conditions is met. 
+"""Looping: We keep running the loop till conditions is met. 
 We have two types of loops
-a. While loop
+a. While loop 
 b. For loop
 
 Keep 3 things in mind: 

@@ -7,11 +7,6 @@ print whether the average is greater than or equal to the fourth number or
 not.
 """
 
-n1 = int(input("Enter the first number: "))
-n2 = int(input("Enter the second number: "))
-n3 = int(input("Enter the third number: "))
-n4 = int(input("Enter the fourth number: "))
-
 
 def average_3(n1: int = 0, n2: int = 0, n3: int = 0) -> float:
     average = (n1 + n2 + n3) / 3
@@ -23,6 +18,12 @@ def compar(a: float, n4: float) -> str:
     if a >= n4:
         return f" The average is greater than or equal to {n4}"
     return f"The average is less than {n4}."
+
+
+n1 = int(input("Enter the first number: "))
+n2 = int(input("Enter the second number: "))
+n3 = int(input("Enter the third number: "))
+n4 = int(input("Enter the fourth number: "))
 
 
 print(compar(average_3(n1, n2, n3), n4))

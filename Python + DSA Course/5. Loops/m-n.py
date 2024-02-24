@@ -8,7 +8,7 @@ while i <= n:
     i += 1
 print()
 
-# Example: Ask M and N from user.
+# Example: Ask M and N or N to M  from user.
 m: int = int(input("Enter M: "))
 n: int = int(input("Enter N: "))
 
@@ -23,3 +23,21 @@ else:
         print(j, end=" ")
         j += 1
 print()
+
+# Method 2:
+
+
+def nTom(m: int, n: int) -> int:
+    i = m
+    while i <= n:
+        print(i, end=" ")
+        i += 1
+
+
+m: int = int(input("Enter M: "))
+n: int = int(input("Enter N: "))
+
+if m < n:
+    nTom(m, n)
+else:
+    nTom(n, m)

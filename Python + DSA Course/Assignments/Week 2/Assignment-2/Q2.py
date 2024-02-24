@@ -5,7 +5,7 @@ and returns the result of raising the base to the power of the exponent.
 
 
 def exponent(b: int = None, exp: int = None) -> int:
-    if b == exp == None:
+    if b == None or exp == None:
         return None
     return b**exp
 

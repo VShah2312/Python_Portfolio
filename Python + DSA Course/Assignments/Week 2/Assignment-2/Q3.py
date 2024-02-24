@@ -5,16 +5,29 @@ divisible by both 3 and 4. Make 2 functions for reusability.
 """
 
 
-def middle(n1: int = 0, n2: int = 0, n3: int = 0):
-    print(n1, n2, type(n3))
-
-    if n1 <= n2 <= n3:
+def middle_2(n1: int = 0, n2: int = 0, n3: int = 0) -> int:
+    if n1 <= n2 <= n3 or n3 <= n2 <= n1:
         return n2
-    elif n2 <= n1 <= n3:
+    if n2 <= n1 <= n3 or n3 <= n1 <= n2:
         return n1
-    elif n1 <= n3 <= n2:
+    else:
         return n3
 
 
-r = middle(1, 8, 0)
-print(r)
+def div3and4(num: int) -> bool:
+    if num % 3 == 0 and num % 4 == 0:
+        return True
+    return False
+
+
+n1 = int(input("Enter the first number: "))
+n2 = int(input("Enter the second number: "))
+n3 = int(input("Enter the third number: "))
+
+middle_number: int = middle_2(n1, n2, n3)
+print(f"The middle number is: {middle_number}")
+
+if div3and4(middle_number) == True:
+    print(f"{middle_number} is divisible 3 and 4.")
+else:
+    print(f"{middle_number} is not divisible 3 and 4.")
