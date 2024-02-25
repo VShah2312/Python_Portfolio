@@ -1,5 +1,5 @@
 # Example 9: Find sum of all the number from 1 to n1 whose i%n2 ==0
-# example: num1=5, num2= 2
+# For example: num1=5, num2= 2
 
 
 def func(n1: int = 0, n2: int = 0) -> int:
@@ -17,3 +17,4 @@ def func(n1: int = 0, n2: int = 0) -> int:
 
 
 print(func(10, 2))
+print(func(100, 1))
