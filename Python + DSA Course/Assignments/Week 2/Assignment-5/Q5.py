@@ -44,3 +44,19 @@ def addDigits_f(n: int) -> int | str:
 
 n: int = int(input("Enter a number: "))
 print(addDigits_f(n))
+
+# Solution :
+
+
+def addDigits(num: int) -> int:
+    # Dont change the num so storing number in n
+    n: int = num
+    total = 0
+    while n > 0:
+        total = total + (n % 10)  # n%10 gives us last digit
+        n = n // 10
+    return total
+
+
+print(addDigits(123))
+print(addDigits(58714))

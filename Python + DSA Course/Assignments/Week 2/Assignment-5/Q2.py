@@ -9,8 +9,8 @@ Lets suppose n=5.
 def harmoicSeries_w(n: int) -> str | float:
     if n <= 0:
         return "Enter a valid number."
-    i = 1
-    sum = 0
+    i: int = 1
+    sum: int = 0
     string = " "
     while i <= n:
         string = string + ("1/" + str(i) + " + ")

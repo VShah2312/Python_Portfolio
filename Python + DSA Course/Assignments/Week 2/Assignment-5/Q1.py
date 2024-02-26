@@ -6,8 +6,8 @@ Question 1: 2 22 222 2222 22222 ... upto n. (Ask n from user)
 
 
 def pattern_w(n: int) -> None:
-    i = 1
-    p = 0
+    i: int = 1
+    p: int = 0
     while i <= n:
         p = p * 10 + 2
         print(p, end=" ")
