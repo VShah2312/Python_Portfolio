@@ -24,3 +24,17 @@ def reverse(n: int) -> int | str:
 # print(reverse(1000))
 # print(reverse(123))
 # print(reverse(1474))
+
+
+# Solution:
+def reverse(num: int) -> int:
+    n = num  # Do not change the original parameter
+    result = 0
+    while n > 0:
+        last_digit = n % 10
+        result = (result * 10) + last_digit
+        n = n // 10
+    return result
+
+
+print(reverse(1000))

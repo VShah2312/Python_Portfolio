@@ -25,3 +25,16 @@ def checkArmstrong(n: int) -> bool:
 print(checkArmstrong(153))
 print(checkArmstrong(407))
 print(checkArmstrong(127))
+
+
+def sumOfFirstAndLastDigit(num: int) -> int:
+    if num <= 9:
+        return num  # If num passed is less than 10
+    n = num
+    last_digit = n % 10
+    while n > 0:
+        if n <= 9:
+            first_digit = n
+            break
+        n = n // 10
+    return first_digit + last_digit
