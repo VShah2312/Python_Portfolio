@@ -2,14 +2,16 @@
 Question 7: 
 """
 
-# Top Half
-for i in range(1, 10):
-    for j in range(1, i + 1):
-        print(j, end=" ")
+for i in range(1, 6):
+    for j in range(4, i - 1, -1):
+        print(" ", end=" ")
+    for k in range(1, 2 * i):
+        print(k, end=" ")
     print()
 
-# Bottom half
-for i in range(7, 0, -1):
-    for j in range(1, i + 1):
-        print(j, end=" ")
+for i in range(4, 0, -1):
+    for j in range(5, i, -1):
+        print(" ", end=" ")
+    for k in range(1, 2 * i):
+        print(k, end=" ")
     print()
