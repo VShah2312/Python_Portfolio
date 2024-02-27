@@ -1,8 +1,9 @@
-# print("* * * * *") i goes from top to bottom so it for number of lines . j goes from left to right
-# print("* * * * *")
-# print("* * * * *")
-# print("* * * * *")
-# print("* * * * *")
+# i goes from top to bottom so it for number of lines . j goes from left to right
+print("* * * * *")
+print("* * * * *")
+print("* * * * *")
+print("* * * * *")
+print("* * * * *")
 
 for i in range(1, 6):
     for j in range(1, 6):
@@ -77,6 +78,12 @@ for i in range(1, 6):
         print(j, end=" ")
     print()
 
+# Method 2:
+
+for i in range(5, 0, -1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
 """
 5 
 4 5
@@ -87,7 +94,7 @@ for i in range(1, 6):
 1. We need to print j as we have different output for each line not like 1 1 1 etc. 
 2. pattern is always ending in 5, means j ends in 5. 
 3. beginning of each number is 5 -> 1 so i need to go from 5 to 1. 
-
+4. Keep in mind what is printing is not important iteration should be first focus, then we can print. 
 """
 for i in range(5, 0, -1):
     for j in range(i, 6):
