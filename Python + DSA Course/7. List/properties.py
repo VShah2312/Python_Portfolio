@@ -1,3 +1,7 @@
+"""
+If a[i] is even a[i]+1 else: a[i]-1
+"""
+
 a = [78, 67, 44, -100, 87, 321]
 print(a)
 
@@ -14,6 +18,8 @@ for i in range(len(a)):
     else:
         a[i] -= 1
 print(a)
+
+a = [78, 67, 44, -100, 87, 321]
 
 for index, value in enumerate(a):
     if value % 2 == 0:

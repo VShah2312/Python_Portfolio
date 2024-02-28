@@ -5,4 +5,4 @@ print(a[3])
 print(a[1:3])  # -> returns list.
 print(a[-1])  # -> last elements
 print(a[-3])
-print(a[0], a[2])
+print(a[0], a[2])  # -> prints elements not list

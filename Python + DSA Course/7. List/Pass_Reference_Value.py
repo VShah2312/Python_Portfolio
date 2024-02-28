@@ -1,3 +1,4 @@
+# Pass by value
 def change(a: int):
     a = 1000
     print(a)  # Local Value
@@ -9,7 +10,7 @@ change(a)
 print(id(a))
 
 
-# Pass by reference
+# Pass by reference (works for mutable objects.)
 def display(lst: list):
     print(id(lst))
     lst[0] = 100
