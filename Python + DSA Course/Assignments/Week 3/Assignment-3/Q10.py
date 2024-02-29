@@ -5,7 +5,7 @@ numbers to decrement by 1.
 """
 
 
-def updateOddEven(my_list) -> int:
+def updateOddEven(my_list: list[int]) -> list:
     for i in range(len(my_list)):
         if my_list[i] % 2 == 0:
             my_list[i] += 1

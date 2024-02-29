@@ -4,7 +4,7 @@ returns the smallest number from the list.
 """
 
 
-def findSmallest(a: list) -> int:
+def findSmallest(a: list[int]) -> int:
     return min(a)
 
 
@@ -12,7 +12,7 @@ a = [3, 60, 9, 120, 18, 24, 15, 450, -7]
 print(findSmallest(a))
 
 
-def findSmallest_2(a: list) -> int:
+def findSmallest_2(a: list[int]) -> int:
     smallest = a[1]
     for i in a:
         if i <= smallest:

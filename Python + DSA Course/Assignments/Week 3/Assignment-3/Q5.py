@@ -4,7 +4,7 @@ print how many even and odd numbers are there.
 """
 
 
-def countOddEven(my_list) -> int:
+def countOddEven(my_list: list[int]) -> int | str:
     total_even = 0
     total_odd = 0
     for i in my_list:

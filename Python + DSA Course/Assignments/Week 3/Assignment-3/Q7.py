@@ -4,7 +4,7 @@ returns the largest number from the list.
 """
 
 
-def findLargest(a: list) -> int:
+def findLargest(a: list[int]) -> int:
     return max(a)
 
 
@@ -12,7 +12,7 @@ a = [3, 60, 9, 120, 18, 24, 15, 450]
 print(findLargest(a))
 
 
-def findLargest_2(a: list) -> int:
+def findLargest_2(a: list[int]) -> int:
     largest = a[1]
     for i in a:
         if largest <= i:

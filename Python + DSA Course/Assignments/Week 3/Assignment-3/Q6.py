@@ -5,7 +5,7 @@ and calculate sum of even and odd numbers.
 """
 
 
-def countOddEven(my_list) -> int:
+def countOddEven(my_list) -> int | str:
     even_sum = 0
     odd_sum = 0
     for i in my_list:

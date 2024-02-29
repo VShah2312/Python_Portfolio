@@ -4,7 +4,7 @@ update all the even numbers to 0 and update all the odd numbers to 1.
 """
 
 
-def updateOddEven(my_list) -> int:
+def updateOddEven(my_list: list[int]) -> list:
     for i in range(len(my_list)):
         if my_list[i] % 2 == 0:
             my_list[i] = 0
