@@ -1,4 +1,4 @@
-# Membership operator (IN/NOT IN)
+# Membership operator (IN/NOT IN) -> bool
 
 a = [89, 25, 14, 89]
 print(a.count(89))  # Counts occurence of a number
