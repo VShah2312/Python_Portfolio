@@ -18,5 +18,3 @@ if n in a:
     print("Yes")
 else:
     print("No")
-
-print(a.index(89))  # Give first occuring index of a value.

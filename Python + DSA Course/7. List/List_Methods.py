@@ -6,8 +6,9 @@ List Methods: (Pass by Reference)
 3. Clear: Clear's the whole list.
 4. Pop: Default index is -1. And it returns something, so we can save it in a variable. Removes by index.
 5. Remove: Removes first occurence of the value. It doesnt returns anything. Removes by value. 
-6. Delete 
-7. Reverse 
+6. Sort: Sorts the list default is ascending, reverse= True returns in desc
+7. Reverse: Reverses the list. (Print elements of list in reverse order)
+8. Count: Count occurence of a value in a list. 
 
 """
 
@@ -79,3 +80,9 @@ c = a.copy()
 # Prints reverse order of elements.
 c.reverse()
 print(c)
+
+print(a.count(89))  # Counts occurence of a number
+
+print(a.count(100))
+
+print(a.index(89))  # Give first occuring index of a value.

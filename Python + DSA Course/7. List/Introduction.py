@@ -16,3 +16,7 @@ print(type(students))
 
 students = ["Vrunda", "Charmi", "Manish", "Kavita", True, -1, 15.63, [1, 2]]
 print(type(students))
+
+from typing import List
+
+a: list[int | str] = [3, 4]
