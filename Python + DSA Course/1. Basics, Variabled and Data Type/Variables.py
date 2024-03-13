@@ -1,12 +1,12 @@
-# We use variables to call data that is stored in temporary memory. 
-# We can use "=" to assign value to a variable. 
+# We use variables to call data that is stored in temporary memory.
+# We can use "=" to assign value to a variable.
 
-x=5
-y=22
-z=x+y
-first= 'Vrunda'
-last= 'Shah'
-name= first+ last
+x = 5
+y = 22
+z = x + y
+first = "Vrunda"
+last = "Shah"
+name = first + last
 print(x)
 print(y)
 print(z)

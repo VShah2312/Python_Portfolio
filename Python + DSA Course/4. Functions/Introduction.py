@@ -40,7 +40,7 @@ def add():
 # Global Variables now. Even though name is same, they are not same.
 num1 = 100
 num2 = 200
-add()  # Uses local variables (values entered.)
+add()  # Uses local varables (values entered.)
 print(num1)
 # This will throw error as num1 is local variable. But will use global variables.
 
@@ -78,9 +78,9 @@ def floorDivision():
     pass
 
 
+# Pass keyword means move on. So for floorDivision function is definied but is pass, as we cant keep it empty.
+
 add()
 subtract()
 product()
 division()
-
-# Pass keyword means move on. So for floorDivision function is definied but is pass, as we cant keep it empty.

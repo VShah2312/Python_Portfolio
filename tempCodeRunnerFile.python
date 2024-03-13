@@ -1,4 +1,0 @@
-my_dict = {"anirudh": 78, "akul": 11, "muskan": 99}
-
-print(my_dict)
-print(type(my_dict))
