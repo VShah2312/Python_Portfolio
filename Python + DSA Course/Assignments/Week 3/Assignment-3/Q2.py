@@ -5,7 +5,7 @@ that list.
 
 a = [3, 6, 9, 12, 18, 24]
 
-for i in a:
-    if i % 3 == 0 and i % 4 == 0:
-        print(i, end=" ")
+for value in a:
+    if value % 3 == 0 and value % 4 == 0:
+        print(value, end=" ")
 print()

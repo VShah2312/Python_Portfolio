@@ -5,7 +5,7 @@ What is lists?
 2. Arrays are to store values of same data type.
 
 Properties of List: 
-1. Ordered
+1. Ordered (maintains way users have entered.)
 2. Mutable (which can be changed)
 
 """

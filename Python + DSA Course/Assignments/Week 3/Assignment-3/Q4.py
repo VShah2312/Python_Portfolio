@@ -6,6 +6,6 @@ len() function.
 a = [3, 60, 9, 120, 18, 24, 15]
 
 length = 0
-for i in a:
+for value in a:
     length += 1
 print(length)

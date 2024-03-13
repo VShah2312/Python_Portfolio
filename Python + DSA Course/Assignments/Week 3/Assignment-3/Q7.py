@@ -8,15 +8,15 @@ def findLargest(a: list[int]) -> int:
     return max(a)
 
 
-a = [3, 60, 9, 120, 18, 24, 15, 450]
+a = [563, 60, 9, 120, 18, 24, 15, 450]
 print(findLargest(a))
 
 
 def findLargest_2(a: list[int]) -> int:
-    largest = a[1]
-    for i in a:
-        if largest <= i:
-            largest = i
+    largest = a[0]
+    for val in a:
+        if largest <= val:
+            largest = val
     return largest
 
 

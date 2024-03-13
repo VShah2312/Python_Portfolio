@@ -3,7 +3,7 @@ Question: Add 1 to even numbers and subtract 1 from Odd numbers in the list:
 if i is odd a[i]+=1 else: a[i]-1
 """
 
-a = [78, 67, 44, -100, 87, 321]
+a = [78, 67, 44, -100, 87, 321, 0]
 
 for i in range(len(a)):
     if a[i] % 2 == 0:

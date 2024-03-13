@@ -20,3 +20,14 @@ i = 1
 while i <= len(a):
     print(a[-i], end=" ")
     i += 1
+print()
+
+my_list = [43, 65, "Elon", "Ambani", False, 55.43]
+
+for i in range(0, len(my_list)):
+    print(my_list[i])
+
+i = 0
+while i < len(my_list):
+    print(my_list[i])
+    i += 1

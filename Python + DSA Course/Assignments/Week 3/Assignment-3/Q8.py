@@ -8,15 +8,15 @@ def findSmallest(a: list[int]) -> int:
     return min(a)
 
 
-a = [3, 60, 9, 120, 18, 24, 15, 450, -7]
+a = [-31, 60, 9, 120, 18, 24, 15, 450, -7]
 print(findSmallest(a))
 
 
 def findSmallest_2(a: list[int]) -> int:
-    smallest = a[1]
-    for i in a:
-        if i <= smallest:
-            smallest = i
+    smallest = a[0]
+    for val in a:
+        if val <= smallest:
+            smallest = val
     return smallest
 
 
