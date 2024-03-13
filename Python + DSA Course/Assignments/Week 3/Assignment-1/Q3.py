@@ -7,7 +7,22 @@ Question 3:
 1 2 3 4 5
 """
 
-for i in range(1, 6):
-    for j in range(6 - i, 6):
-        print(j, end=" ")
-    print()
+
+def pattern(num: int) -> None:
+    for i in range(1, num + 1):
+        for j in range(num + 1 - i, num + 1):
+            print(j, end=" ")
+        print()
+
+
+pattern(7)
+
+
+def pattern_soln(n: int):
+    for i in range(n, 0, -1):
+        for j in range(i, n + 1):
+            print(j, end=" ")
+        print()
+
+
+pattern_soln(7)

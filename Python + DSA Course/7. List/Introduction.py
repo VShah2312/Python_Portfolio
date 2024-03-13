@@ -1,7 +1,14 @@
-# What is lists?
+"""
+What is lists?
 
-# 1. To store multiple values of same/different data types
-# 2. Arrays are to store same values.
+1. To store multiple values of same/different data types
+2. Arrays are to store values of same data type.
+
+Properties of List: 
+1. Ordered
+2. Mutable (which can be changed)
+
+"""
 
 students = ["Vrunda", "Charmi", "Manish", "Kavita"]
 print(type(students))

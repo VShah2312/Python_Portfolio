@@ -11,16 +11,40 @@ Question 7:
         1
 """
 
-for i in range(1, 6):
-    for j in range(4, i - 1, -1):
-        print(" ", end=" ")
-    for k in range(1, 2 * i):
-        print(k, end=" ")
-    print()
 
-for i in range(4, 0, -1):
-    for j in range(5, i, -1):
-        print(" ", end=" ")
-    for k in range(1, 2 * i):
-        print(k, end=" ")
-    print()
+def pattern(num: int) -> None:
+    # Top Half:
+    for i in range(1, num + 1):
+        for j in range(num - 1, i - 1, -1):
+            print(" ", end=" ")
+        for k in range(1, 2 * i):
+            print(k, end=" ")
+        print()
+    # Bottom Half:
+    for i in range(num - 1, 0, -1):
+        for j in range(num, i, -1):
+            print(" ", end=" ")
+        for k in range(1, 2 * i):
+            print(k, end=" ")
+        print()
+
+
+pattern(5)
+
+
+def pattern_soln(n: int) -> None:
+    for i in range(1, n // 2 + 2):
+        for j in range(n // 2 - i + 1):
+            print(" ", end=" ")
+        for k in range(1, 2 * i):
+            print(k, end=" ")
+        print()
+    for i in range(n // 2, -1, -1):
+        for j in range(n // 2 - i + 1):
+            print(" ", end=" ")
+        for k in range(1, 2 * i):
+            print(k, end=" ")
+        print()
+
+
+pattern_soln(6)

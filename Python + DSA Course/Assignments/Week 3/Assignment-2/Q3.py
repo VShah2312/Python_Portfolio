@@ -7,9 +7,27 @@ Question 3:
 5 5 5 5 5 5 5 5 5 
 """
 
-for i in range(1, 6):
-    for j in range(4, i - 1, -1):
-        print(" ", end=" ")
-    for k in range(1, 2 * i):
-        print(i, end=" ")
-    print()
+
+def pattern(num: int) -> None:
+
+    for i in range(1, num + 1):
+        for j in range(num - 1, i - 1, -1):
+            print(" ", end=" ")
+        for k in range(1, 2 * i):
+            print(i, end=" ")
+        print()
+
+
+pattern(6)
+
+
+def pattern_soln(n: int) -> None:
+    for i in range(1, n + 1):
+        for j in range(n - i):
+            print(" ", end=" ")
+        for k in range(2 * i - 1):
+            print(i, end=" ")
+        print()
+
+
+pattern_soln(9)
