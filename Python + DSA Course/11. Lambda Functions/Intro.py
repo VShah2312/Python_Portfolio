@@ -1,6 +1,6 @@
 """
 Lambda functions: Anonymus functions. So we will need to save it in a variable (can be name of the function) 
-When to you lambda function: When you dont have much logic build up.
+When to you lambda function: When you dont have much logic build up. Only one line statements are allowed. 
 """
 
 # Example:
@@ -15,6 +15,6 @@ print(add(1, 5))
 print(mult(4, 5, 6))
 
 # Create a lambda function 15-> list[int] -> [1,2,3,..., 15]
+# Lambda and List Comprehensions
 make_list = lambda num: [i for i in range(1, num + 1)]
-
 print(make_list(15))

@@ -30,5 +30,16 @@ my_details = [
     {"name": "Amber", "age": 23, "gender": "Male"},
 ]
 
+# This sort works as my_details is list of dict.
 my_details.sort(key=lambda x: x["age"], reverse=True)
+print(my_details)
+
+
+# Alternate way
+def abc(x):
+    return x["age"]
+
+
+# Here we  are not calling the function we are giving reference of the functions as key takes a function.
+my_details.sort(key=abc, reverse=True)
 print(my_details)
