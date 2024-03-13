@@ -2,11 +2,11 @@
 num: int = int(input("Enter a number: "))
 
 if num > 0:
-    i: int = num * -1
-    j: int = num
+    i: int = num * -1  # 3 -> -3
+    j: int = num  # 3
 else:
-    i: int = num
-    j: int = num * -1
+    i: int = num  # -3
+    j: int = num * -1  # -3 -> 3
 
 
 while i <= j:

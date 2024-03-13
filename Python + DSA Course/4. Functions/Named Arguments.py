@@ -16,7 +16,7 @@ totalMarks(eng=58, phy=95, maths=85, comp=45, chem=75)
 # Keep in mind the arguments without name needs to be on the right.
 totalMarks(58, phy=95, maths=85, comp=45, chem=75)
 # This will throw error as value without name is for phy position and we defined phy again too
-# So variable without name needs to be exact position as the variable.
+# So variable value without name needs to be exact position as the variable.
 
 
 # We could also have default value if not mentioned.
