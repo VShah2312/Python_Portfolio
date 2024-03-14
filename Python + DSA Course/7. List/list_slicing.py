@@ -2,14 +2,14 @@
 my_list = [45, 31, 76, 54, 11, 32, 100]
 
 # Result:
-result = my_list[0 : len(my_list)]
+result = my_list[0 : len(my_list)]  # Maybe makes deep copy.
 result = my_list[0::]
 result = my_list[0:]
 # returns whole list
 print(result)
 
 # Steps:
-result_2 = my_list[0:6:2]
+result_2 = my_list[0:6:2]  # Step 2
 print(result_2)
 # All elements:
 result_3 = my_list[:]
