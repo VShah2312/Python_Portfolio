@@ -2,15 +2,36 @@
 Question 2: Write a function to remove duplicates from a list and print them.
 """
 
+from typing import List
+
 
 def removeDuplicates(a: list[int]) -> list:
-    duplicate = []
-    for i in a:
-        if a.count(i) > 1:
-            duplicate.append(i)
-    return duplicate
+    result = []
+    for val in a:
+        if val not in result:
+            result.append(val)
+    return result
 
 
-a: list[int] = [34, 2323, 3434, 22, 22, 34]
+a: list[int] = [34, 96, 34, 34, 51, 27, 96, 96, 11, 34]
 
 print(removeDuplicates(a))
+
+
+# Solution:
+def removeDuplicates(lst: List[int]) -> None:
+    result = []
+    """
+    Method 1
+    for i in range(0, len(lst)):
+        if lst[i] not in result:
+            result.append(lst[i])
+    """
+    for i in lst:
+        if i not in result:
+            result.append(i)
+    print(result)
+
+
+my_list = [34, 96, 34, 34, 51, 27, 96, 96, 11, 34]
+removeDuplicates(my_list)
