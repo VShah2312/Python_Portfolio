@@ -8,6 +8,7 @@ from typing import Tuple
 my_tuple: tuple[int] = (32, 45, -100, 67, 77, 43)
 
 # Properties:
+print(type(my_tuple))
 # 1. Access via index similar to list:
 print(my_tuple[0])
 print(my_tuple[-1])
@@ -16,26 +17,32 @@ print(my_tuple[-1])
 # my_tuple[2] = -1
 # print(my_tuple)
 # Give TypeError: 'tuple' object does not support item assignment
-# Can't append, pop, insert etc.
 
-# 3. Traversing/ Iteration
+# 3. Traversing/ Iteration:
+# a. Traverse by Index:
 for index in range(0, len(my_tuple)):
     print(my_tuple[index], end=" ")
 print()
 
+# b. Traverse by Value:
+for value in my_tuple:
+    print(value, end=" ")
+print()
+
 # 4. Methods for tuples:
+# Can't append, pop, insert etc. as tuple is immutable.
 print(my_tuple.count(100))
 print(my_tuple.index(43))
-# print(my_tuple.index(100))
+# print(my_tuple.index(100)) -> ValueError
 
 # 5. Membership Operators (in, not in)
 print("Vrunda" in my_tuple)  # -> bool
 
-# Slicing (We are not changing the tuple, we are creating a new tuple.)
+# 6. Slicing (We are not changing the tuple, we are creating a new tuple.)
 print(my_tuple[1:4])  # -> tuple
 print(my_tuple[::-1])  # Reverse tuple.
 
-# Single element tuple:
+# 7. Single element tuple:
 # We are creating tuple here as well.
 a = 98, 0
 print(type(a))
@@ -44,15 +51,20 @@ print(type(a))
 a = (0,)
 print(type(a))
 
-# Adding two tuples concates the tuples to each other.
+# 8. Adding two tuples concates the tuples to each other.
 my_tuple_2: tuple = (98, 0)
-
 print(my_tuple + my_tuple_2)
 
-# Converting tuple to a list:
+# 9. Converting tuple to a list and viceversa:
 my_list = list(my_tuple)
 print(my_list)
+my_tup_conver = tuple(my_list)
+print(my_tup_conver)
 
-# Comprehension:
+# 10. Tuple Comprehension: in list we just use [], he we have to convert it to tuple with tuple keyword
 a = tuple(i for i in range(1, 11))
+print(a)
+
+# 11. Empty tuple:
+a = tuple()
 print(a)

@@ -26,10 +26,10 @@ print(
     d, type(d)
 )  # if use * all the extra elements goes in form of list to that variable.
 
-a, b, *c, d = 56, 67, 678, 23, 45
+a, b, *c, d = (56, 67, 678, 23, 45)
 print(a, type(a))
 print(b, type(b))
-print(c, type(c))
 print(
-    d, type(d)
+    c, type(c)
 )  # if use * all the extra elements goes in form of list to that variable.
+print(d, type(d))

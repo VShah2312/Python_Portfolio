@@ -4,7 +4,7 @@ Question 8: Write a Python code to split a list into two halves using list slici
 """
 
 
-def split(my_list: list[int]) -> list:
+def split(my_list: list[int]) -> list | str:
     if len(my_list) % 2 == 0:
         n = int(len(my_list) / 2)
         result_1 = my_list[:n]

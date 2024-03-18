@@ -1,6 +1,7 @@
 """
-ASCII: All the keys on keyboard has a numeric value for CPU to understand. 
+ASCII: All the character on keyboard has a numeric value for CPU to understand. 
 For capital and lower case its different. 
+ASCII value is only possible for String. 
 """
 
 my_string = "a"
@@ -10,7 +11,7 @@ print(ord(my_string))
 
 my_string = "python is a great language"
 count = 0
-for char in my_string:
+for char in my_string:  # Here char is variable name
     if char == "e" or char == "E":
         count += 1
 

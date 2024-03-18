@@ -16,9 +16,25 @@ print(
     f"The element with the highest occurence is: {keys[index]} ({value[index]} times)"
 )
 
+# Solution:
+my_list = ["Anirudh", 1, 1, 1, 2, 3, 154, 65, 2, 2, 1, 44, 5, 154, 154, "Anirudh"]
 
-def my_function(a, b):
-    return a + b
+unique_elements = []
 
+for i in my_list:
+    if i not in unique_elements:
+        unique_elements.append(i)
 
-x = my_function(5, 6)
+# Print the frequencies and keep track of the largest frequency and that element
+highest_frequency = 0
+highest_frequency_element = 0
+
+for i in unique_elements:
+    freq = my_list.count(i)
+    print(f"{i} occurs {freq} times")
+    if freq > highest_frequency:
+        highest_frequency = freq
+        highest_frequency_element = i
+
+print(f"Highest frequency = {highest_frequency}")
+print(f"Highest frequency element = {highest_frequency_element}")
