@@ -29,7 +29,9 @@ print(count)
 
 count = 0
 for char in a:
-    if ord(char) >= 48 and ord(char) <= 57:
+    if (
+        ord(char) >= 48 and ord(char) <= 57
+    ):  # ord(char) is giving ASCII number of a char
         count += 1
 print(count)
 
