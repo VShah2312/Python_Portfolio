@@ -56,7 +56,8 @@ try:
     try:
         my_list = [34, 55, 63, 78, 94, 0]
         print(my_list[0] / my_list[-1])
-    except:
+    except:  # Handles the error for try clause 2. Thus we no longer have error for try clause 1
+        # Thus no need for except clause for try clause 1 to run.
         print("Try Clause 2")
 except:
     print("Try Clause 1")
