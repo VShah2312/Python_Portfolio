@@ -8,8 +8,18 @@ n = int(input("Enter a number: "))
 
 
 def function(my_list: list[int], n: int) -> list:
-    result = my_list[: len(my_list) - n - 1 : -1]
+    result = my_list[::-1]
     return result
 
 
 print(function(my_list, n))
+
+from typing import List
+
+
+def reverseListSlice(lst: List):
+    print(lst[::-1])
+
+
+my_list = [10, -5, 8, 3, -1, -9, 7, 2]
+reverseListSlice(my_list)

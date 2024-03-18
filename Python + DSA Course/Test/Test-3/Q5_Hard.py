@@ -15,3 +15,10 @@ index = value.index(max(value))
 print(
     f"The element with the highest occurence is: {keys[index]} ({value[index]} times)"
 )
+
+
+def my_function(a, b):
+    return a + b
+
+
+x = my_function(5, 6)
