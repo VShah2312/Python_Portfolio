@@ -5,11 +5,25 @@ character.
 """
 
 
-def joinReverse(string: str, char: str) -> str:
+def joinString(string: str, char: str) -> str:
     result = string.split()
-    return char.join(result[::-1])
+    return char.join(result)
 
 
 user_input = input("Enter a string: ")
 char = input("Enter a character: ")
-print(joinReverse(user_input, char))
+print(joinString(user_input, char))
+
+
+# Solution:
+def joinString_solution(string: str, char: str) -> str:
+    words = string.split()
+    result = char.join(i for i in words)
+    return result
+
+    # Single line
+    # return char.join(i for i in string.split())
+
+
+r = joinString_solution("hello world", "%")
+print(r)

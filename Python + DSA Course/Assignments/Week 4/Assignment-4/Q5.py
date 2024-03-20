@@ -12,3 +12,17 @@ def reversedWords(my_string: str) -> str:
 
 user_input = input("Enter string: ")
 print(reversedWords(user_input))
+
+
+# Solution:
+def reverseWords(string: str) -> str:
+    words = string.split()
+    result = " ".join(i[::-1] for i in words)
+    return result
+
+    # Shortcut
+    # return " ".join(i[::-1] for i in string.split())
+
+
+r = reverseWords("python is great")
+print(r)

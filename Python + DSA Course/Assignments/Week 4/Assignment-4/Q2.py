@@ -5,7 +5,9 @@ list of words.
 
 
 def words(my_string: str):
-    result = [i for i in my_string.split()]
+    # don't need loop split gives list
+    # result = [i for i in my_string.split()]
+    result = my_string.split()
     return result
 
 
