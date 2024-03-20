@@ -5,23 +5,23 @@ It bascially crashes as soon as assertion condition is FALSE. Assertion conditio
 Assert conditions are the one that needs to be satisfied. 
 """
 
-# age = int(input("Enter your age: "))
+age = int(input("Enter your age: "))
 
-# assert age > 18, "You should be atleast 18 age"  # You customized error message
+assert age > 18, "You should be atleast 18 age"  # You customized error message
 
-# vote_id = int(input("Enter voting ID: "))
-# vote_party = input("Enter party to vote: ")
+vote_id = int(input("Enter voting ID: "))
+vote_party = input("Enter party to vote: ")
 
 # Example 1:
-# try:
-#     age = int(input("Enter your age: "))
-#     assert age > 18, "You should be atleast 18 age"  # You customized error message
-#     vote_id = int(input("Enter voting ID: "))
-#     vote_party = input("Enter party to vote: ")
-# except AssertionError as e:
-#     print(e)
-# except:
-#     print("Some error occured.")
+try:
+    age = int(input("Enter your age: "))
+    assert age > 18, "You should be atleast 18 age"  # You customized error message
+    vote_id = int(input("Enter voting ID: "))
+    vote_party = input("Enter party to vote: ")
+except AssertionError as e:
+    print(e)
+except:
+    print("Some error occured.")
 
 
 # Example 2:

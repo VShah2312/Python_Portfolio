@@ -1,5 +1,5 @@
 """
-Traceback Example: Traceback helps us find line where error occurs
+Traceback Example: Traceback helps us finds the first line where error occurs
 """
 
 import traceback
