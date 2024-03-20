@@ -3,6 +3,7 @@ Strings: Data type
 
 1. Immutable. 
 2. Almost same as tuple/ list
+3. Iterable
 """
 
 a = "python "

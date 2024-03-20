@@ -14,3 +14,17 @@ def firstAndLast(my_str) -> str:
 
 print(firstAndLast("aeroplane"))
 print(firstAndLast("ae"))
+
+
+# Solution:
+def printFirstAndLastTwoCh(string: str):
+    if len(string) < 2:
+        print("Not enough characters")
+        return
+
+    print(string[:2] + string[-2:])
+
+
+printFirstAndLastTwoCh("code")
+printFirstAndLastTwoCh("aeroplane")
+printFirstAndLastTwoCh("c")
