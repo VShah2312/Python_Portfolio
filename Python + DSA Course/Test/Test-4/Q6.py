@@ -30,3 +30,36 @@ def passwordCheck(string: str) -> bool:
 
 string = input("Enter a password: ")
 print(passwordCheck(string))
+
+
+# Solution:
+def isStrongPassword(password: str):
+    has_uppercase = False
+    has_lowercase = False
+    has_digit = False
+    has_special = False
+
+    for char in password:
+        if char.isupper():
+            has_uppercase = True
+        elif char.islower():
+            has_lowercase = True
+        elif char.isdigit():
+            has_digit = True
+        elif not char.isalnum():
+            has_special = True
+
+    if (
+        len(password) >= 8
+        and has_uppercase
+        and has_lowercase
+        and has_digit
+        and has_special
+    ):
+        return True
+    else:
+        return False
+
+
+password = input("Enter a password: ")
+print(isStrongPassword(password))
