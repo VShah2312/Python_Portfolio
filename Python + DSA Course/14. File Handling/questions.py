@@ -56,6 +56,7 @@ print(function_4("hello.txt"))
 
 
 # Question: File has all numbers:
+# Method 1:
 def function_5(file_name: str) -> int:
     sum = 0
     f = open(file_name, "r")
@@ -63,7 +64,35 @@ def function_5(file_name: str) -> int:
     for num in data.split():
         print(num)
         sum += int(num)
+    f.close()
     return sum
 
 
 print(function_5("hello.txt"))
+
+# Method 2:
+
+
+def function_5_2(file_name: str) -> int:
+    f = open(file_name, "r")
+    sum = 0
+    numbers = f.readlines()
+    for number in numbers:
+        number = number.strip()
+        sum = sum + int(number)
+    f.close()
+    return sum
+
+
+print(function_5_2("hello.txt"))
+
+
+# Method 3:
+f = open("hello.txt", "r")
+data = f.read().split()
+sum = 0
+for i in data:
+    sum += int(i)
+
+print(sum)
+f.close()
