@@ -37,9 +37,11 @@ print(my_details)
 
 # Alternate way
 def abc(x):
+    print(x)
     return x["age"]
 
 
 # Here we  are not calling the function we are giving reference of the functions as key takes a function.
+# You can see it displays each line of dict due to line 40 even though we are only using on reference in below query.
 my_details.sort(key=abc, reverse=True)
 print(my_details)
