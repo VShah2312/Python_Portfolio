@@ -15,7 +15,13 @@ print(a.intersection(b))
 a.add(-100)
 print(a)
 
+# Pop:
+# a.pop()
+# print(a)
+
 # Remove:
+a.remove(34)
+print(a)
 # a.remove(21) # Throws keyError
 # Behave more like dict keys
 
@@ -26,3 +32,7 @@ for val in a:
 
 # Membership Operator:
 print(33 in a)
+
+# Clear:
+a.clear()
+print(a)

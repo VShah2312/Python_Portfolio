@@ -13,7 +13,6 @@ a = int()
 
 
 # How to create empty dict
-b = (
-    dict()
-)  # -> creates empty dict as a= {} can be empty dict but can also mean empty set.
+b = dict()
+# -> creates empty dict as a= {} can be empty dict but can also mean empty set.
 a = set()  # -> creates empty set
