@@ -12,7 +12,7 @@ student_data = [
     ["Olivia", 21, "Philadelphia", 400],
     ["Daniel", 23, "San Antonio", 375],
 ]
-
+# Here we changed the orignal list: don't do that
 student_data.sort(key=lambda x: x[3])
 print(student_data)
 

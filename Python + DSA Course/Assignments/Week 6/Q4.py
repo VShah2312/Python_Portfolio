@@ -20,3 +20,14 @@ result.sort(key=lambda x: x[1])
 
 for name, total in result:
     print(f"{name} has scored {total}")
+
+# Solution:
+sorted_student_data = sorted(
+    student_data, key=lambda x: sum(x[list(x.keys())[0]]["marks"])
+)
+
+for details in sorted_student_data:
+    name = list(details.keys())[0]
+    marks = details[name]["marks"]
+    total_marks = sum(marks)
+    print(f"{name} has scored {total_marks}")
