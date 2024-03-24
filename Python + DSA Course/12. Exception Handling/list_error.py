@@ -41,6 +41,7 @@ finally:  # Runs always irrespective of the error. You can use it without else c
 try:
     my_list = [34, 55, 63, 78, 94, 0]
     print(my_list[99])  # -> gives IndexError
+    # goes to except block directly
     try:
         my_list = [34, 55, 63, 78, 94, 0]
         print(my_list[0] / my_list[-1])

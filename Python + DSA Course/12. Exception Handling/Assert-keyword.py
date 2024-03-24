@@ -34,4 +34,4 @@ try:
 except AssertionError as e:
     print(e)
 except:
-    print("Some error has occured.")
+    print("Some unknown error has occured.")

@@ -4,13 +4,25 @@ the ValueError exception if the user enters a non-integer value.
 """
 
 
-def function(num1) -> int | str:
+def function():
     try:
-        if type(num1).__name__ == int:
-            return num1
+        age = int(input("Enter your age ="))
+        return age
     except ValueError:
         return "Enter a integer value."
 
 
-print(function(1))
-print(function("abc"))
+print(function())
+
+
+# Solution:
+def getAge():
+    try:
+        age = int(input("Enter your age = "))
+        return age
+    except ValueError:
+        print("Invalid input. Please enter a valid integer for age.")
+
+
+age = getAge()
+print(f"Age is {age}")
