@@ -23,9 +23,8 @@ except ZeroDivisionError or ValueError:  # Type of errors
     print("Cannot divide by Zero, please check values again")
 except IndexError:
     print("Index is out of range")
-except (
-    Exception
-) as e:  # Always have to go last. It handle all error that are not specified above block.
+except Exception as e:
+    # Always have to go last. It handle all error that are not specified above block.
     # But we are unable to tell what type of error has occured. E tells the error message.
     print(type(e).__name__)  # Gets us name of the error
     print(f"{e} : error message")
@@ -41,7 +40,7 @@ finally:  # Runs always irrespective of the error. You can use it without else c
 # Try Clause 1:
 try:
     my_list = [34, 55, 63, 78, 94, 0]
-    print(my_list[99])
+    print(my_list[99])  # -> gives IndexError
     try:
         my_list = [34, 55, 63, 78, 94, 0]
         print(my_list[0] / my_list[-1])
