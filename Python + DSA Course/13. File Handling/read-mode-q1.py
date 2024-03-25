@@ -34,10 +34,12 @@ for line in f:
     print(len(line.split()))
 f.close()
 
-# Question 3: How many char in each words in each line?
+# Question 3: How many char in each line?
 # Here we get one extra char (i.e \n)
 f = open("hello.txt", "r")
 lines = f.readlines()
 for line in lines:
+    # print(list(line))
+    # print(len(list(line)))  # Here we are getting \n as char too
     print(len(line.strip()))
 f.close()
