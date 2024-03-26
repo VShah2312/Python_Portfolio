@@ -67,6 +67,7 @@ class Student:
         self.phone_number = new_number
 
     def display(self):
+        """Display all the info related to the studnet."""
         print(f"Roll no: {self.roll_no}")
         print(f"Name: {self.name}")
         print(f"Gender: {self.gender}")
@@ -79,3 +80,5 @@ s1.display()
 s1.updatePhoneNumber(9998582)
 s1.updateName()
 print(s1.__doc__)  # -> None Gives information about class you have mentioned.
+print(s1.display.__doc__) # Give information about display method. 
+# Display any information mentioned in doc string in the very begining. 

@@ -16,3 +16,8 @@ my_string = "python_is_great"
 print(snakeToPascal(my_string))
 my_string = "we_are_learning_python_programming"
 print(snakeToPascal(my_string))
+
+# Solution:
+test_str = "we_are_learning_python_programming"
+res = test_str.replace("_", " ").title().replace(" ", "")
+print(res)

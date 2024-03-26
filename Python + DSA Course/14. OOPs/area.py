@@ -17,22 +17,22 @@ import math
 
 
 class Area:
-    def rectangle(self) -> str:
+    def rectangle(self) -> float:
         length = float(input("Enter a length: "))
         breadth = float(input("Enter a breadth: "))
-        return f"Area of rectangle is {length * breadth}"
+        return length * breadth
 
-    def square(self) -> str:
+    def square(self) -> float:
         side = float(input("Enter a side: "))
-        return f"Area of square is {side**2}"
+        return side**2
 
-    def circle(self, radius=0) -> str:
+    def circle(self, radius=0) -> float:
         area = 2 * math.pi * radius
-        return f"Area of circle is {area}"
+        return area
 
-    def triangle(self, breadth=0, height=0) -> str:
+    def triangle(self, breadth=0, height=0) -> float:
         area = 0.5 * breadth * height
-        return f"Area of triangle is {area}"
+        return area
 
 
 object = Area()

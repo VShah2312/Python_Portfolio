@@ -15,3 +15,20 @@ def arrangeChars(my_string: str) -> str:
 
 print(arrangeChars("aaeroplanee"))
 print(arrangeChars("heelllllooo"))
+
+
+# Solution:
+def arrangeChars(string: str) -> str:
+    characters_count = {}
+    for ch in string:
+        characters_count[ch] = characters_count.get(ch, 0) + 1
+    characters_count = dict(
+        sorted(characters_count.items(), key=lambda x: x[1], reverse=True)
+    )
+    result = ""
+    for char, count in characters_count.items():
+        result += char * count
+    return result
+
+
+print(arrangeChars("aaeroplane"))

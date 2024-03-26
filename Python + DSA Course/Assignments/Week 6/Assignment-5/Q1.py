@@ -15,4 +15,21 @@ def oddCharacters(my_string: str) -> list:
 
 
 print(oddCharacters("hello"))
-print(oddCharacters("aeroplanee"))
+print(oddCharacters("aeroplane"))
+
+# Solution:
+from typing import List
+
+
+def oddCharacters(string: str) -> List[str]:
+    characters_count = {}
+    for ch in string:
+        characters_count[ch] = characters_count.get(ch, 0) + 1
+    result = []
+    for char, count in characters_count.items():
+        if count % 2 == 1:
+            result.append(char)
+    return result
+
+
+print(oddCharacters("aeroplane"))
