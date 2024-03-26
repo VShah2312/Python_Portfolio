@@ -5,6 +5,7 @@ input_file = input(
 )  # You will have use extension of the file as well
 output_file = input("Enter a file name to copy from: ")
 
+# Method 1:
 try:
     f = open(input_file, "r")
     data = f.read()
@@ -18,8 +19,27 @@ except FileNotFoundError:
 except:
     print("Unknown error occured.")
 
+# Method 2: Best Method
+exists = False
+try:
+    f = open(input_file, "r")
+    data = f.read()
+    f.close()
+    exists = True
+except FileNotFoundError:
+    print("File does not exists")
+except:
+    print("Unknown error occured.")
+try:
+    if exists == True:
+        f = open(output_file, "w")
+        f.write(data)
+        f.close()
+except:
+    print("Some unkown error has occured.")
 
-# Code :
+
+# Method 3:
 import sys
 
 input_file = input("Enter file to copy from = ")
@@ -30,10 +50,10 @@ try:
     f.close()
 except FileNotFoundError:
     print("File does not exists")
-    sys.exit()
+    sys.exit()  # closes the program.
 except:
     print("Some unknown error occurred")
-    sys.exit()
+    sys.exit()  # closes the program as soon we get error during reading.
 
 try:
     f = open(output_file, "w")
@@ -41,4 +61,3 @@ try:
     f.close()
 except:
     print("Some unknown error occurred")
-# ...

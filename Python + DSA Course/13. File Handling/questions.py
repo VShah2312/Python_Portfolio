@@ -4,8 +4,6 @@ def function(file_name: str) -> int:
     data = f.read()
     # Default for split is white space( space, enter, tab )
     words = data.split()
-    result = [char for char in words]
-    print(words)
     f.close()
     return len(words)
 
