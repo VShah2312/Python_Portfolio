@@ -53,12 +53,25 @@ class Student:
     Create an object of Student with various attributes and features.
     """
 
-    def __init__(self) -> None:
-        self.roll_no = int(input("Eneter roll no: "))
-        self.name = input("Eneter name: ")
-        self.gender = input("Eneter gender: ")
-        self.age = int(input("Eneter age: "))
-        self.phone_number = int(input("Enter a phone number: "))
+    def __init__(
+        self, roll_no: int, name: str, gender: str, age: int = 0, phone_number: int = 0
+    ) -> None:
+        self.roll_no = roll_no
+        self.name = name
+        self.gender = gender
+        self.age = age
+        self.phone_number = phone_number
+
+    # OR
+    # Keep in mind init is also function, so it can also take parameters.
+    # In above method it will take parameters while creating object.
+
+    # def __init__(self) -> None:
+    #     self.roll_no = int(input("Eneter roll no: "))
+    #     self.name = input("Eneter name: ")
+    #     self.gender = input("Eneter gender: ")
+    #     self.age = int(input("Eneter age: "))
+    #     self.phone_number = int(input("Enter a phone number: "))
 
     def updateName(self) -> None:
         self.name = input("Enter new name: ")
@@ -80,5 +93,5 @@ s1.display()
 s1.updatePhoneNumber(9998582)
 s1.updateName()
 print(s1.__doc__)  # -> None Gives information about class you have mentioned.
-print(s1.display.__doc__) # Give information about display method. 
-# Display any information mentioned in doc string in the very begining. 
+print(s1.display.__doc__)  # Give information about display method.
+# Display any information mentioned in doc string in the very begining.

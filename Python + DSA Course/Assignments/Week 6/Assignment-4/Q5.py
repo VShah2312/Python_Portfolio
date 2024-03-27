@@ -5,6 +5,8 @@ need to create these files. (Search for how to create a file on google. Also
 you can use Write mode to create a file).
 """
 
+import string
+
 
 # solution:
 def generateFiles():
