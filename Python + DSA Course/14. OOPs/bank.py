@@ -63,10 +63,15 @@ while True:
         for obj in accounts:
             obj.display()
     elif choice == 3:
-        if obj in accounts:
-            obj.display()
-        else:
-            print("Invalid account number")
+        search_account = int(input("Enter account number to search: "))
+        exists = False
+        for obj in accounts:
+            if obj.acount_number == search_account:
+                obj.display()
+                exists = True
+                break
+        if not exists:  # Not False will be True
+            print("Account number does not exists.")
     elif choice == 6:
         break
     else:
