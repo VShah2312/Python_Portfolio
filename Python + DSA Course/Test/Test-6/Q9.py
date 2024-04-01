@@ -11,7 +11,7 @@ n).
 def rotation(my_string: str, d: int) -> str:
     left_newstring = my_string[d:] + my_string[:d]
     right_newstring = my_string[-d::] + my_string[:-d]
-    print(f"Left Programming: {left_newstring}")
+    print(f"Left Rotation: {left_newstring}")
     print(f"Right Rotation: {right_newstring}")
 
 
