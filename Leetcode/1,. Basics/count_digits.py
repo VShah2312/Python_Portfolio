@@ -1,12 +1,8 @@
+# Brute Force:
 """
-Question: count digits x=533356
-    Approach: 1 convert number to str and take len 
-        int->str tc:O(N), sc: O(1)
+Time Complexity = O(log10 n) where n is the digit
+Space Complexity = O(1)
 """
-
-# Brute:
-x = 5344
-print(len(str(x)))
 
 
 # Better:
@@ -22,6 +18,11 @@ def countdigits(num: int):
 print(countdigits(5344))
 
 # Optimal:
+"""
+Time Complexity = O(1)
+Space Complexity = O(1)
+"""
+
 import math
 
 
