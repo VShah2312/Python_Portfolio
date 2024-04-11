@@ -10,4 +10,4 @@ def func(i, sum):
     func(i - 1, sum + i)
 
 
-print(func(5, 0))
+func(5, 0)
