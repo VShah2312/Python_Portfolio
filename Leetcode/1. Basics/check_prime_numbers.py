@@ -1,5 +1,5 @@
 """
-https://www.codingninjas.com/studio/problems/check-prime_624934
+Question: https://www.codingninjas.com/studio/problems/check-prime_624934
 """
 
 """
@@ -29,7 +29,7 @@ SC -> O(1)
 from math import sqrt
 
 
-def checkPrime(num: int) -> int:
+def checkPrime(num: int) -> bool:
     if num == 1:
         return False
     for i in range(2, int(sqrt(num)) + 1):

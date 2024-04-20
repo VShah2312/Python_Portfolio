@@ -23,4 +23,5 @@ def reverse_list(lst, start, end):
 
 
 my_list = [1, 2, 3, 4, 5]
-print(reverse_list(my_list, 2, 3))
+reverse_list(my_list, 2, 3)
+print(my_list)  # -> [1, 2, 4, 3, 5], position 2 and 3 is reversed.

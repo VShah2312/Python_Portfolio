@@ -2,13 +2,13 @@
 
 
 # Parametrize (forwardtracking):
-def func_p(n, f):
+def func_p(n, factorial):
     if n < 0:
         raise Exception("Invalid Value")
     if n == 1 or n == 0:
-        print(f)
+        print(factorial)
         return
-    func_p(n - 1, f * n)
+    func_p(n - 1, factorial * n)
 
 
 func_p(5, 1)

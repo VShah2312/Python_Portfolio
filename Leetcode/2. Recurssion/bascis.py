@@ -10,7 +10,4 @@ def func():
     func()
 
 
-if __name__ == "main":
-    func()
-
 func()

@@ -1,9 +1,14 @@
+"""
+Question: https://www.codingninjas.com/studio/problems/count-frequency-in-a-range_8365446
+"""
+
 # 10 14
 # 11 14 8 3 12 14 1 7 4 3
 from typing import *
 
 
 # Brute force Solution:
+# TC: O(M)+O(N)
 def countFrequency(n: int, m: int, edges: List[List[int]]):
     hash_dict = {}
     for i in edges:
@@ -54,3 +59,40 @@ def countFrequency(n: int, m: int, edges: List[List[int]]):
 
 edges = [1, 3, 1, 9, 2, 7]
 print(countFrequency(6, 9, edges))
+
+
+# OR
+from typing import *
+
+# TC: O(M*N)
+
+
+def countFrequency_2(n: int, m: int, edges: List[List[int]]):
+    hash_map = {}
+    for i in range(1, n + 1):
+        hash_map[i] = hash_map.get(i, 0) + edges.count(i)
+    print(hash_map)
+    return list(hash_map.values())
+
+
+edges = [1, 3, 1, 9, 2, 7]
+print(countFrequency_2(6, 9, edges))
+
+
+# Optimal:
+from typing import List
+
+
+def countFrequency(n: int, m: int, edges: List[List[int]]):
+
+    mylst = [0] * n
+
+    for x in edges:
+        if x > n:
+            continue  # Skipp everything after an go to next iteration
+        mylst[x - 1] += 1
+        # index starts with zero we want to start storing value from 1.
+    return mylst
+
+
+print(countFrequency(6, 9, [1, 3, 1, 9, 2, 7]))
