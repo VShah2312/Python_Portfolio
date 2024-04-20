@@ -11,13 +11,15 @@ def func(i, sum):
 
 
 func(5, 0)
-
 # Find Sum of first N natural number:
 
 
-def func(n):
+def func_2(n):
     if n < 0:
         raise Exception("Invalid Value")
     if n == 1:
         return 1  # Base case
-    return n + func(n - 1)  # Flow
+    return n + func_2(n - 1)  # Flow
+
+
+print(func_2(5))

@@ -12,3 +12,15 @@ def func(a: list, i: int) -> list:
 
 my_list = [1, 2, 3, 4, 5]
 print(func(my_list, 0))
+
+
+# To reverse anywhere in the list:
+def reverse_list(lst, start, end):
+    if start > end:
+        return
+    lst[start], lst[end] = lst[end], lst[start]
+    reverse_list(lst, start + 1, end - 1)
+
+
+my_list = [1, 2, 3, 4, 5]
+print(reverse_list(my_list, 2, 3))
