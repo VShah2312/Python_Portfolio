@@ -29,6 +29,8 @@ def getFrequencies(v: List[int]):
 
 
 print(getFrequencies([10, 10, 10, 3, 3, 3]))
+b = [1, 2, 1, 1, 3, 4]
+print(getFrequencies(b))
 
 
 # Solution:
@@ -45,7 +47,6 @@ def getFrequencies(v: List[int]) -> List[int]:
             hashMap[num] = 1 + hashMap[num]
         else:
             hashMap[num] = 1
-    print(hashMap)
     minFreq = float("inf")
     minElement = float("inf")
     maxFreq = float("-inf")
