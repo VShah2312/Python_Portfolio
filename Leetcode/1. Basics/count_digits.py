@@ -1,3 +1,7 @@
+"""
+Question: https://www.naukri.com/code360/problems/count-digits_8416387
+"""
+
 # Brute Force:
 """
 Time Complexity = O(log10 n) where n is the digit
