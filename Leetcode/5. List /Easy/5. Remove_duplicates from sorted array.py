@@ -3,7 +3,7 @@ Question: https://leetcode.com/problems/remove-duplicates-from-sorted-array/desc
 """
 
 
-# Brute force:
+# Brute force: Doesnt work as we need to make changes in inplace.
 def removeDuplicates(nums: list[int]) -> int:
     answer = []
     for i in range(len(nums)):
@@ -16,3 +16,12 @@ def removeDuplicates(nums: list[int]) -> int:
 
 print(removeDuplicates([1, 1, 2]))
 print(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
+
+# Brute Force:
+
+
+def removeDuplicate(nums) -> int:
+    for i in range(len(nums)):
+        
+
+print(removeDuplicate([1, 1, 2]))

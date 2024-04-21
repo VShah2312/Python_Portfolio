@@ -45,8 +45,10 @@ Space complexity = O(1)
 def largest(arr: list[int]) -> int:
     largest = float("-inf")
     for nums in arr:
-        if nums > largest:
-            largest = nums
+        # if nums > largest:
+        #     largest = nums
+        # instead we can use this
+        largest = max(nums, largest)
     return largest
 
 

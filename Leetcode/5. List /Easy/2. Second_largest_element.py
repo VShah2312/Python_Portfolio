@@ -2,8 +2,23 @@
 Question: https://www.naukri.com/code360/problems/ninja-and-the-second-order-elements_6581960
 """
 
+from typing import List
+
 
 # Brute force:
+def getSecondOrderElements(n: int, a: List[int]) -> List[int]:
+    # Sort the array
+    a.sort()
+
+    # Second minimum will be on 1st index
+    # Second largest will be on last second index
+    return [a[-2], a[1]]
+
+
+a = [1, 2, 5, 8, 8, 5, 3, 7]
+
+
+# Better:
 def secondOrderElements(n: int, arr: list[int]):
     largest = float("-inf")
     second_largest = float("-inf")
