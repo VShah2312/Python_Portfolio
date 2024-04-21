@@ -27,7 +27,7 @@ def merge(left, right):
     i, j = 0, 0
 
     # Merge the two halves by comparing elements
-    while i < len(left) and j < len(right):
+    while i < len(left) and j < len(right):  # Till either one is exhausted.
         if left[i] < right[j]:
             merged.append(left[i])
             i += 1
