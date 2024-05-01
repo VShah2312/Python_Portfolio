@@ -31,7 +31,7 @@ import math
 
 
 def countDigits(num: int):
-    return math.ceil(math.log10(num))
+    return int(math.log10(num)) + 1
 
 
 print(countDigits(5344))
