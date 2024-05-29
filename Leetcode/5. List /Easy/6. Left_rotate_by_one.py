@@ -18,7 +18,15 @@ def rotateArray(arr: list[int], n: int) -> list:
 print(rotateArray([1, 2, 3, 4, 5], 5))
 
 
-# Brute Force 2:
+# Optimal:
+"""
+Time Complexity = O(n), n is number of elements in array
+Space Complexity = O(1)
+
+This code is actually similar to Brute force one
+"""
+
+
 def rotatArray(arr: list[int], n: int) -> list:
     k = arr[0]
     for i in range(len(arr)):

@@ -17,11 +17,53 @@ def removeDuplicates(nums: list[int]) -> int:
 print(removeDuplicates([1, 1, 2]))
 print(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
 
-# Brute Force:
+# Bruteforce:
+
+from typing import List
+
+"""
+Time complexity = O(n) where n is the number of elements in list
+We are looping two different times, so it will be O(n) + O(n).
+Which equals tos O(n)
+
+Space complexity = O(n), suppose all numbers are unique, it will take same length as list
+"""
 
 
-def removeDuplicate(nums) -> int:
-    for i in range(len(nums)):
-        
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        my_dict = dict()
+        for i in nums:
+            my_dict[i] = 0
 
-print(removeDuplicate([1, 1, 2]))
+        j = 0
+        for n in my_dict:
+            nums[j] = n
+            j += 1
+        return j
+
+
+# Optimal:
+
+from typing import List
+
+"""
+Time complexity = O(n) where n is the number of elements in list
+But in this case, we are using only 1 loop instead of 2 FOR loops
+
+Space complexity = O(1), no extra space
+"""
+
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        if len(nums) == 1:
+            return 1
+        i = 0
+        j = i + 1
+        while j < len(nums):
+            if nums[j] != nums[i]:
+                i += 1
+                nums[j], nums[i] = nums[i], nums[j]
+            j += 1
+        return i + 1
