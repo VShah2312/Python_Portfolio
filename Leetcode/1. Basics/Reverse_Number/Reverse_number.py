@@ -2,6 +2,12 @@
 Question: https://leetcode.com/problems/reverse-integer/description/
 """
 
+# Bruteforce:
+"""Convert to string slice it and convert back to int
+TC: O(N)
+SC: O(1)
+"""
+
 # Optimal:
 """
 Time Complexity = O(log10 n), n is the number
