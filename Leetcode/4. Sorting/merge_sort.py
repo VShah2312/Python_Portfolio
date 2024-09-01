@@ -50,3 +50,44 @@ def merge(left, right):
 arr = [64, 34, 25, 12, 22, 11, 90]
 sorted_arr = merge_sort(arr)
 print(f"Sorted array = {sorted_arr}")
+
+
+def mergeSort(arr, l: int, r: int):
+    # Write Your Code Here
+    if len(arr) == 1:
+        return arr
+
+    # Dividing the arr
+    mid = len(arr) // 2
+    left = arr[:mid]
+    right = arr[mid:]
+
+    left = mergeSort(left, 0, len(left) - 1)
+    right = mergeSort(right, 0, len(right) - 1)
+
+    return merge(left, right)
+
+
+def merge(left, right):
+    i = 0
+    j = 0
+    merged = []
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            merged.append(left[i])
+            i += 1
+        else:
+            merged.append(right[j])
+            j += 1
+    while i < len(left):
+        merged.append(left[i])
+        i += 1
+    while j < len(right):
+        merged.append(right[j])
+        j += 1
+    return merged
+
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+sorted_arr = mergeSort(arr, 0, 7)
+print(f"Sorted array = {sorted_arr}")

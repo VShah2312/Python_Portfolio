@@ -1,16 +1,24 @@
-# count = 1
+"""
+TC: O(N)
+SC: O(N) 
+"""
+
+count = 1
 
 
-# def func():
-#     global count
-#     print(count)
-#     if count == 5:
-#         return
-#     count += 1
-#     func()
+def func():
+    global count
+    print(count)
+    if count == 5:
+        return
+    count += 1
+    func()
 
 
-# func()
+func()
+
+
+# Method 2:
 from typing import List
 
 result = []
